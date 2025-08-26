@@ -159,7 +159,7 @@ const ruleProviders = {
     "behavior": "classical",
     "url": "https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml",
     "path": "./ruleset/ChinaIP.yaml",
-  },
+  }
 };
 // 规则
 const rules = [
@@ -184,6 +184,8 @@ const rules = [
   "RULE-SET,Lan,DIRECT",
   "RULE-SET,Download,DIRECT",
 
+  "GEOIP,LAN,全局直连,no-resolve",
+  "GEOIP,CN,全局直连,no-resolve",
   "MATCH,漏网之鱼",
 ];
 // 代理组通用配置
